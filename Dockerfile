@@ -1,10 +1,11 @@
-FROM ruby:3.1-buster
+FROM ruby:3.1
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
   build-essential \
   nodejs \
   libffi-dev \
+  libffi8 \
   zlib1g-dev \
   libssl-dev  
 
